@@ -64,7 +64,7 @@ KinematicSynthesis[Nlinks_Integer, Jjoints_Integer] := Module[
 
 ### Conceptos Involucrados:
 *   **Matriz de Adyacencia:** Representación matricial del grafo. Si el eslabón $i$ se une al $j$, la posición $(i,j)$ es $1$; si no, es $0$.
-*   **Trazas y Potencias (`Tr`, `MatrixPower`):** La traza de una matriz es la suma de su diagonal principal. Elevar la matriz de adyacencia a la potencia $r$ y extraer su traza ($s_r = Tr(A^r)$) revela el número de trayectorias cerradas de longitud $r$ en el grafo.
+*   **Trazas y Potencias (`Tr`, `MatrixPower`):** La traza de una matriz es la suma de su diagonal principal. Elevar la matriz de adyacencia a la potencia $r$ y extraer su traza $s_r = Tr(A^r)$ revela el número de trayectorias cerradas de longitud $r$ en el grafo.
 *   **Fórmula de Bôcher:** Tradicionalmente, calcular el polinomio característico requiere el determinante $|\lambda I - A|$. Bôcher proporciona una fórmula iterativa para hallar los coeficientes ($a_j$) usando únicamente las trazas.
 *   **Huella Topológica:** Dos grafos isomórficos (idénticos en forma pero numerados distinto) *siempre* tienen el mismo polinomio. Comparar polinomios es computacionalmente baratísimo frente a la comparación directa de grafos ($O(V!)$).
 
